@@ -24,7 +24,7 @@ public class JavaApplicationPunto3 {
         while(bandera==false){
         clearScreen();
         Scanner MyObj_Menu = new Scanner(System.in);
-        System.err.println("******MenÃº******");
+        System.err.println("******Menú******");
         System.out.println("1) Ingresar jugadores Titular");
         System.out.println("2) Ingresar jugadores Suplente");
         System.out.println("3) Reporte equipo");
@@ -41,7 +41,7 @@ public class JavaApplicationPunto3 {
             case 3:
                 System.err.println("Nombre del Equipo : " + nombre_Del_Equipo);
                 System.err.println("Nombre del Estadio : " + nombre_Del_Estadio);
-                System.err.println("Cantidad de TÃ­tulos : " + cant_Titulos);
+                System.err.println("Cantidad de Títulos : " + cant_Titulos);
                 System.err.println("Cantidad de Jugadores : " + jugadores_Suplentes.size() + jugadores_Titulares.size());
                 break;
             case 4:
@@ -51,7 +51,7 @@ public class JavaApplicationPunto3 {
                 bandera=true;
                 break;
             default:
-                System.out.println("//////Error en la elecciÃ³n en el menÃº////////");
+                System.out.println("//////Error en la elección en el menú////////");
         }
         }
     }
@@ -61,7 +61,7 @@ public class JavaApplicationPunto3 {
         nombre_Del_Equipo = MyObj.nextLine();
         System.out.println("Ingrese el nombre del estadio por favor");
         nombre_Del_Estadio = MyObj.nextLine();
-        System.out.println("Ingrese la cantidad de tÃ­tulos por favor");
+        System.out.println("Ingrese la cantidad de títulos por favor");
         cant_Titulos = MyObj.nextInt();  
     }
     
@@ -89,11 +89,11 @@ public class JavaApplicationPunto3 {
     public static String posicion() {
         String posicion = null;
         while (posicion == null) {
-            System.out.println("--------Ingrese la posiciÃ³n del jugador--------");
+            System.out.println("--------Ingrese la posición del jugador--------");
             System.out.println("1) Arquero");
             System.out.println("2) Lateral");
             System.out.println("3) Defensa Central");
-            System.out.println("4) Volante de recuperaciÃ³n");
+            System.out.println("4) Volante de recuperación");
             System.out.println("5) Volante mixto");
             System.out.println("6) Volante ofensivo");
             System.out.println("7) Delantero");
@@ -110,7 +110,7 @@ public class JavaApplicationPunto3 {
                     posicion = "Defensa Central";
                     break;
                 case 4:
-                    posicion = "Volante de recuperaciÃ³n";
+                    posicion = "Volante de recuperación";
                     break;
                 case 5:
                     posicion = "Volante mixto";
@@ -122,7 +122,7 @@ public class JavaApplicationPunto3 {
                     posicion = "Delantero";
                     break;
                 default:
-                    System.out.println("PosiciÃ³n errÃ³nea");
+                    System.out.println("Posición errónea");
             }
         };
         return posicion;
@@ -132,7 +132,7 @@ public class JavaApplicationPunto3 {
         System.err.println("--------Reporte Detallado-----------");
         System.err.println("Nombre del Equipo : " + nombre_Del_Equipo);
         System.err.println("Nombre del Estadio : " + nombre_Del_Estadio);
-        System.err.println("Cantidad de TÃ­tulos : " + cant_Titulos);
+        System.err.println("Cantidad de Títulos : " + cant_Titulos);
         System.err.println("Titulares " + jugadores_Titulares.toString());
         System.err.println("Suplentes " + jugadores_Suplentes.toString());
     }
