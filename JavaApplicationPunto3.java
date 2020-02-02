@@ -20,6 +20,7 @@ public class JavaApplicationPunto3 {
     
     public static void main(String[] args){
         arranca_Programa();
+		boolean banderaAux = false;
         boolean bandera = false;
         while(bandera==false){
         clearScreen();
